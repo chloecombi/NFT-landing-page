@@ -240,6 +240,11 @@ const Roadmap = () => {
             title="NFT Ranking"
             subtext="Each NFT will be assigned a ranking determined by both its Family Name and Traits. "
           />
+          <RoadMapItem
+            addToRef={addToRefs}
+            title="More to come!"
+            subtext="Stay tuned for more exciting things that we will build as a community"
+          />
         </Items>
       </Container>
     </Section>
