@@ -68,7 +68,7 @@ const Navigation = () => {
          
         </Menu>
 
-       <Button text="Twitter" link="https://twitter.com/rocketjetracoon"/>
+       <Button text="NFT Tracker" link="https://rak-jade.vercel.app/"/>
  
         
       
