@@ -65,10 +65,10 @@ const Navigation = () => {
           <MenuItem onClick={() => handleScroll('roadmap')}>Roadmap</MenuItem>
           <MenuItem onClick={() => handleScroll('showcase')}>Showcase</MenuItem>
           <MenuItem onClick={() => handleScroll('team')}>Team</MenuItem>
-          <MenuItem onClick={() => handleScroll('faq')}>Faq</MenuItem>
+         
         </Menu>
 
-       <Button text="Connect Wallet" link="https://google.com"/>
+       <Button text="Twitter" link="https://twitter.com/rocketjetracoon"/>
  
         
       
