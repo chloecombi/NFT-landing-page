@@ -128,10 +128,10 @@ const NftItem = ({ img, number = 0, price = 0, passRef }) => {
 
   return (
     <ImgContainer onMouseOver={pause} onMouseOut={play}>
-      <img width={500} height={400} src={img} alt="The Weirdos" />
+      <img width={500} height={400} src={img} alt="The Raccoons" />
       <Details>
         <div>
-          <span>Weirdos</span> <br />
+          <span>The Raccoons</span> <br />
           <h1>#{number}</h1>
         </div>
 
