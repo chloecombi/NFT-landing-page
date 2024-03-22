@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from 'react';
 import styled from 'styled-components';
-import img1 from '../../assets/Nfts/1.png';
-import img2 from '../../assets/Nfts/2.png';
+import img1 from '../../assets/Nfts/MonCombi.png';
+import img2 from '../../assets/Nfts/SalvatoreLinnaeus.png';
 import img3 from '../../assets/Nfts/3.png';
 import img4 from '../../assets/Nfts/4.png';
 import img5 from '../../assets/Nfts/bighead-4.svg';
@@ -19,6 +19,10 @@ const Section = styled.section`
   background-color: ${props => props.theme.body};
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 const Title = styled.h1`
@@ -38,7 +42,7 @@ const Title = styled.h1`
 `;
 
 const Container = styled.div`
-  width: 75%;
+  width: 50%;
   margin: 2rem auto;
   display: flex;
   justify-content: space-between;
@@ -133,12 +137,12 @@ const Team = () => {
       <Suspense fallback={<Loading />}>
         <ConfettiComponent />
       </Suspense>
-      <Title>Team</Title>
+      <Title>Meet Our Exceptional Team Members</Title>
       <Container>
-        <MemberComponent img={img1} name="SKYBLAZE" position="Founder" />
-        <MemberComponent img={img2} name="MEGNUM" position="Discord Developer" />
-        <MemberComponent img={img3} name="MONKEY KING" position="Web Developer" />
-        <MemberComponent img={img4} name="BLACK PANTHER" position="Artist" />
+        <MemberComponent img={img1} name="Rivs" position="Founder & Artist" />
+        <MemberComponent img={img2} name="Rocket" position="Discord Developer" />
+        <MemberComponent img={img3} name="De~Dentist" position="Collaborations Manager" />
+      
       
       </Container>
     </Section>
