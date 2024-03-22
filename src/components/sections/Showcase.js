@@ -117,7 +117,7 @@ const Price = styled.div`
   }
 `;
 
-const NftItem = ({ img, number = 0, price = 0, passRef }) => {
+const NftItem = ({ img, price = 0, passRef }) => {
   let play = (e) => {
     passRef.current.style.animationPlayState = 'running';
   };
@@ -131,15 +131,15 @@ const NftItem = ({ img, number = 0, price = 0, passRef }) => {
       <img width={500} height={400} src={img} alt="The Raccoons" />
       <Details>
         <div>
-          <span>The Raccoons</span> <br />
-          <h1>#{number}</h1>
+          <span>The Raccoons <br/> Soseity </span> <br />
+         
         </div>
 
         <div>
-          <span>Price</span>
+          <span>Supply</span>
           <Price>
             <img width={200} height={200} src={"https://pallet.exchange/Vector.svg"} alt="SEI" />
-            <h1>{Number(price).toFixed(1)}</h1>
+            <h1> 1,111</h1>
           </Price>
         </div>
       </Details>
@@ -154,19 +154,19 @@ const Showcase = () => {
   return (
     <Section id="showcase">
       <Row direction="none" ref={Row1Ref}>
-        <NftItem img={img1} number={852} price={100} passRef={Row1Ref} />
-        <NftItem img={img2} number={123} price={100} passRef={Row1Ref} />
-        <NftItem img={img3} number={456} price={100} passRef={Row1Ref} />
-        <NftItem img={img4} number={666} price={100} passRef={Row1Ref} />
-        <NftItem img={img5} number={452} price={100} passRef={Row1Ref} />
+        <NftItem img={img1}  price={1111} passRef={Row1Ref} />
+        <NftItem img={img2}  price={1111} passRef={Row1Ref} />
+        <NftItem img={img3}  price={1111} passRef={Row1Ref} />
+        <NftItem img={img4}  price={1111} passRef={Row1Ref} />
+        <NftItem img={img5}  price={100} passRef={Row1Ref} />
       </Row>
 
       <Row direction="reverse" ref={Row2Ref}>
-        <NftItem img={img6} number={888} price={100} passRef={Row2Ref} />
-        <NftItem img={img7} number={211} price={100} passRef={Row2Ref} />
-        <NftItem img={img8} number={455} price={100} passRef={Row2Ref} />
-        <NftItem img={img9} number={456} price={100} passRef={Row2Ref} />
-        <NftItem img={img10} number={865} price={100} passRef={Row2Ref} />
+        <NftItem img={img6} number={888} price={1111} passRef={Row2Ref} />
+        <NftItem img={img7} number={211} price={1111} passRef={Row2Ref} />
+        <NftItem img={img8} number={455} price={1111} passRef={Row2Ref} />
+        <NftItem img={img9} number={456} price={1111} passRef={Row2Ref} />
+        <NftItem img={img10} number={865} price={1111} passRef={Row2Ref} />
       </Row>
     </Section>
   );
