@@ -247,6 +247,37 @@ const Roadmap = () => {
           />
         </Items>
       </Container>
+      <Title>Holders Benefits</Title>
+      <Container>
+        <SvgContainer>
+          <DrawSvg />
+        </SvgContainer>
+        <Items>
+          <Item>&nbsp;</Item>
+          <RoadMapItem
+            addToRef={addToRefs}
+            title="SubDao"
+            subtext="Holding our NFT will let you create your own SubDao based on traits and family names"
+          />
+         
+          <RoadMapItem
+            addToRef={addToRefs}
+            title="Trading Mechanics"
+            subtext="Learn the basics of coin trading and tutorial guides will be given by Rocket"
+          />
+           <RoadMapItem
+            addToRef={addToRefs}
+            title="Fund Allocation"
+            subtext="Percentage of mint funds and royalties will be allocated to members depends on voting to be used for dao innovation"
+          />
+          <RoadMapItem
+            addToRef={addToRefs}
+            title="$SEI Airdrop"
+            subtext="Earn $SEI airdrops by holding NFTs when raccoons take profits in trading"
+          />
+         
+        </Items>
+      </Container>
     </Section>
   );
 };
